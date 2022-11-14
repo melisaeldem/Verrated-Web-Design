@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3cad6;
+  /* overflow: hidden; */
+}
+a {
+  text-decoration: none;
+}
+/* header start */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+header .logo img {
+  width: 150px;
+  cursor: pointer;
+}
+header .link a {
+  margin-left: 15px;
+  font-weight: 500;
+  color: #ca124693;
+}
+header .link a:hover {
+  color: #ff1616;
+  transition: 0.5s;
+}
+header .btn button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ca124693;
+  background-color: #ff669193;
+  cursor: pointer;
+}
+header .btn button:hover {
+  background-color: #ca124693;
+  transition: 0.5s;
+  color: white;
+}
+/* header finish */
+
+/* main start */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .text {
+  max-width: 100%;
+  width: 400px;
+}
+.main .text .span-1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(51, 50, 50);
+}
+.main .text h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 20px;
+  color: #ff6692;
+  text-shadow: 1px 1px 3px rgb(255, 22, 22);
+}
+.main .text p {
+  max-width: 100%;
+  width: 400px;
+  color: rgb(51, 50, 50);
+}
+.main .text button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff669193;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #ca124693;
+}
+.main .text button:hover {
+  background-color: #ca124693;
+  color: white;
+  transition: 0.5s;
+}
+.main .text .icon-btn {
+  border: 1px solid #ca124693;
+  background: transparent;
+  margin-left: 10px;
+}
+.main .text .icon-btn .fa-circle-play {
+  background: transparent;
+  position: relative;
+  right: 7px;
+  top: 2.4px;
+}
+.main .main-img img {
+  max-width: 100%;
+  width: 650px;
+}
+.main .social-media {
+  display: flex;
+  flex-direction: column;
+  color: #ca124693;
+}
+.main .social-media i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.main .social-media i:hover {
+  color: #ba1212b7;
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
+/* main finish */
+
+/* section start */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 100%;
+  width: 750px;
+  color: rgb(51, 50, 50);
+  cursor: pointer;
+}
+.box {
+  padding: 15px;
+  margin: 20px;
+  box-shadow: rgba(255, 22, 22, 0.404) 0px 5px 15px;
+  text-align: center;
+}
+.box:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.box img {
+  width: 250px;
+}
+.box h3 {
+  font-size: 17px;
+  margin-bottom: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.box p {
+  font-size: 14px;
+}
+/* section finish */
+
+/* responsive start */
+@media screen and (max-width: 850px) {
+  header {
+    flex-direction: column;
+  }
+  header .logo img {
+    margin-bottom: 10px;
+  }
+  header .link a {
+    font-size: 14px;
+  }
+  header .btn button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+  }
+  .main .text{
+    margin-left: 120px;
+    margin-bottom: 40px;
+  }
+  .main .text p{
+    width: 300px;
+    font-size: 14px;
+  }
+  .main .text h2{
+    font-size: 30px;
+  }
+  .main .main-img img{
+    width: 450px;
+  }
+  .main .social-media i{
+    display: none;
+  }
+  .section{
+    flex-wrap: wrap;
+    width: 350px;
+  }
+  .box img{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 730px){
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.main .text{
+  margin-left: 107px;
+  margin-bottom: 40px;
+}
+}
+
+/* responsive finish */
